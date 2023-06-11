@@ -6,9 +6,9 @@
 }
 
 .Converter__Top {
-    height: 50%;
+    height: 60%;
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: blue;
 }
 
 .Converter__CurrencyConverter {
@@ -27,12 +27,18 @@
     position: relative;
     top: 30%;
     left: 5%;
-    grid-template-columns: 30% 30% 3% 30%;
+    grid-template-columns: 30% 30% 5% 30%;
     grid-template-rows: 30% 50%;
     gap: 4px 16px;
     height: 30%;
     width: 90%;
     align-items: center;
+}
+
+.Converter__CurrencyConverter__Grid span {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .Converter__CurrencyConverter__Grid__Amount {
@@ -43,18 +49,17 @@
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.5em;
-
+    font-size: 20px;
+    padding-left: 5px;
 }
+
 .Converter__CurrencyConverter__Grid__Amount__Input {
     position: relative;
     height: 50%;
     width: 90%;
     background-color: white;
     border: none;
-    padding: 4px 0 0;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
 }
 .Converter__CurrencyConverter__Grid__Amount__Input:focus {
     outline: none;
@@ -67,7 +72,6 @@
     border: 1px solid black;
     align-content: center;
     align-items: center;
-    font-size: 1.5em;
 }
 
 .Converter__CurrencyConverter__Grid__Currency__From__Select, .Converter__CurrencyConverter__Grid__Currency__To__Select {
@@ -76,21 +80,24 @@
     width: 100%;
     background-color: white;
     border: none;
-    font-weight: bold;
     border-radius: 10px;
     padding-left: 10px;
+    font-size: 16px;
+}
+
+.Converter__CurrencyConverter__Grid__Currency__From__Select:focus, .Converter__CurrencyConverter__Grid__Currency__To__Select:focus {
+    outline: none;
 }
 
 .Converter__CurrencyConverter__Grid__Currency__Convert {
     text-align: center;
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     border: 1px solid black;
     border-radius: 100px;
 }
 
 .Converter__CurrencyConverter__Grid__Currency__Convert span {
     position: relative;
-    top: 2px;
-    left: 1px;
+    top: 11px;
 }

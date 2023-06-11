@@ -17,13 +17,13 @@ const NavBar = () => {
       </div>
       <div className="NavBar__Middle">
         <div className="NavBar__Middle__Item1">
-          <span>Item1</span>
+          <span>Menu</span>
         </div>
         <div className="NavBar__Middle__Item2">
-          <span>Item2</span>
+          <span>News</span>
         </div>
         <div className="NavBar__Middle__Item3">
-          <span>Item3</span>
+          <span>Calculator</span>
         </div>
         <div className="NavBar__Middle__FAQ">
           <span>FAQ</span>
