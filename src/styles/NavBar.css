@@ -1,0 +1,76 @@
+.NavBar {
+    z-index: 100;
+    background-color: blue;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.NavBar__Left {
+    display: flex;
+    width: 11%;
+    height: 100%;
+    margin-left: 15%;
+    float: left;
+    align-items:center;
+    text-align: center;
+}
+
+.NavBar__Left__Logo {
+    width: 60%;
+}
+
+.NavBar__Left__Logo a img {
+    width: 75%;
+    height: 75%;
+}
+
+.NavBar__Left__Language {
+    width: 65%;
+}
+.NavBar__Left__Language a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.NavBar__Middle {
+    display: flex;
+    position: relative;
+    left: 12%;
+    top: 25%;
+    width: 40%;
+    height: 50%;
+    align-items:center;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.NavBar__Middle__Item1, .NavBar__Middle__Item2, .NavBar__Middle__Item3, .NavBar__Middle__FAQ {
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+
+.NavBar__Middle__Item1 {
+    width: 25%;
+}
+
+.NavBar__Middle__Item2 {
+    width: 25%;
+}
+.NavBar__Middle__Item3 {
+    width: 25%;
+}
+.NavBar__Middle__FAQ {
+    width: 25%;
+}
+
+.NavBar__Middle__Item1:hover, .NavBar__Middle__Item2:hover, .NavBar__Middle__Item3:hover, .NavBar__Middle__FAQ:hover {
+    background-color: #5a5aff;
+    opacity: 0.9;
+    border-radius: 5px;
+}

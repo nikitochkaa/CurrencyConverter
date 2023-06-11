@@ -1,0 +1,96 @@
+.Converter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.Converter__Top {
+    height: 50%;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+.Converter__CurrencyConverter {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    height: 40%;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(35, 55, 80, 0.3);
+    border-radius: 10px;
+}
+
+.Converter__CurrencyConverter__Grid {
+    display: grid;
+    position: relative;
+    top: 30%;
+    left: 5%;
+    grid-template-columns: 30% 30% 3% 30%;
+    grid-template-rows: 30% 50%;
+    gap: 4px 16px;
+    height: 30%;
+    width: 90%;
+    align-items: center;
+}
+
+.Converter__CurrencyConverter__Grid__Amount {
+    display: inline-flex;
+    border-radius: 10px;
+    height: 90%;
+    border: 1px solid black;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+
+}
+.Converter__CurrencyConverter__Grid__Amount__Input {
+    position: relative;
+    height: 50%;
+    width: 90%;
+    background-color: white;
+    border: none;
+    padding: 4px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.Converter__CurrencyConverter__Grid__Amount__Input:focus {
+    outline: none;
+}
+
+.Converter__CurrencyConverter__Grid__Currency__From, .Converter__CurrencyConverter__Grid__Currency__To {
+    display: inline-flex;
+    border-radius: 10px;
+    height: 90%;
+    border: 1px solid black;
+    align-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.Converter__CurrencyConverter__Grid__Currency__From__Select, .Converter__CurrencyConverter__Grid__Currency__To__Select {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.Converter__CurrencyConverter__Grid__Currency__Convert {
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+.Converter__CurrencyConverter__Grid__Currency__Convert span {
+    position: relative;
+    top: 2px;
+    left: 1px;
+}
