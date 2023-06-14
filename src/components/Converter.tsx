@@ -32,7 +32,9 @@ const Converter = () => {
             </select>
           </div>
         </div>
-        <div className="Converter__CurrencyConverter__Convert"></div>
+        <div className="Converter__CurrencyConverter__Convert">
+          <button className="Converter__CurrencyConverter__Convert__Button">Convert</button>
+        </div>
       </div>
     </div>
   );

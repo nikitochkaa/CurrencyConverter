@@ -101,3 +101,25 @@
     position: relative;
     top: 11px;
 }
+
+.Converter__CurrencyConverter__Convert {
+    position: relative;
+    top: 40%;
+    right: 5%;
+    float: right;
+}
+
+.Converter__CurrencyConverter__Convert__Button {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    background-color: #5a5aff;
+    border: 1px solid #5a5aff;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+.Converter__CurrencyConverter__Convert__Button:hover {
+    cursor: pointer;
+}
