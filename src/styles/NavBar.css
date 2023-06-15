@@ -33,8 +33,12 @@
     width: 65%;
 }
 .NavBar__Left__Language a {
-    color: inherit;
+    color: #7e7edc;
     text-decoration: none;
+}
+.NavBar__Left__Language .active {
+    color: inherit;
+    background-color: inherit;
 }
 
 .NavBar__Middle {
@@ -50,27 +54,30 @@
     font-size: 20px;
 }
 
-.NavBar__Middle__Item1, .NavBar__Middle__Item2, .NavBar__Middle__Item3, .NavBar__Middle__FAQ {
+.NavBar__Middle__Item{
     display: grid;
     align-items: center;
     height: 100%;
-}
-
-.NavBar__Middle__Item1 {
     width: 25%;
-}
-
-.NavBar__Middle__Item2 {
-    width: 25%;
-}
-.NavBar__Middle__Item3 {
-    width: 25%;
-}
-.NavBar__Middle__FAQ {
-    width: 25%;
-}
-
-.NavBar__Middle__Item1:hover, .NavBar__Middle__Item2:hover, .NavBar__Middle__Item3:hover, .NavBar__Middle__FAQ:hover {
-    background-color: #5a5aff;
+    border: 1px solid transparent;
     border-radius: 5px;
+}
+
+.NavBar__Middle__Item a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavBar__Middle__Item .active {
+    background-color: #5a5aff;
+}
+
+
+.NavBar__Middle__Item:hover{
+    background-color: #5a5aff;
 }

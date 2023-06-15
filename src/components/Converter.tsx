@@ -1,22 +1,21 @@
-import React, {useEffect, useState} from 'react';
-import {useAppDispatch, useAppSelector} from "../hooks/redux";
-import {fetchExchangeRate} from "../store/reducers/ActionCreators";
+import React, {useEffect, useState} from 'react'
+import {useAppDispatch, useAppSelector} from '../hooks/redux'
+import {fetchExchangeRate} from '../store/reducers/ActionCreators'
 
 type CurrencySigns = {
-  [currencyCode: string]: string;
+  [currencyCode: string]: string
 };
 
 const Converter = () => {
   const dispatch = useAppDispatch()
   const {data, isLoading, error} = useAppSelector(state => state.exchangeRatesReducer)
 
+  const [fromCurrency, setFromCurrency] = React.useState<string>('UAH')
+  const [toCurrency, setToCurrency] = React.useState<string>('USD')
 
-  const [fromCurrency, setFromCurrency] = React.useState<string>('UAH');
-  const [toCurrency, setToCurrency] = React.useState<string>('USD');
+  const [amount, setAmount] = useState<number>(0)
 
-  const [amount, setAmount] = useState<number>(0);
-
-  const [exchangeRate, setExchangeRate] = React.useState<number>(0);
+  const [exchangeRate, setExchangeRate] = React.useState<number>(0)
 
   useEffect(() => {
     if (data.result) {
